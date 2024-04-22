@@ -215,11 +215,11 @@ async def cancelTask(Reason: str):
                         [
                             InlineKeyboardButton(  # Opens a web URL
                                 "Channel 📣",
-                                url="https://t.me/Colab_Leecher",
+                                url="https://t.me/sky_leech",
                             ),
                             InlineKeyboardButton(  # Opens a web URL
                                 "Group 💬",
-                                url="https://t.me/Colab_Leecher_Discuss",
+                                url="https://t.me/skyleechchat",
                             ),
                         ],
                     ]
@@ -262,19 +262,13 @@ async def SendLogs(is_leech: bool):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(
-                            "Git Repo 🪲",
-                            url="https://github.com/XronTrix10/Telegram-Leecher",
-                        ),
-                    ],
-                    [
                         InlineKeyboardButton(  # Opens a web URL
                             "Channel 📣",
-                            url="https://t.me/Colab_Leecher",
+                            url="https://t.me/sky_leech",
                         ),
                         InlineKeyboardButton(  # Opens a web URL
                             "Group 💬",
-                            url="https://t.me/Colab_Leecher_Discuss",
+                            url="https://t.me/skyleechchat",
                         ),
                     ],
                 ]
@@ -303,7 +297,7 @@ async def SendLogs(is_leech: bool):
                     MSG.status_msg = await MSG.status_msg.reply_text(text=fn_txt)
             except Exception as e:
                 Err = f"<b>Error Sending logs » </b><i>{e}</i>"
-                Err += f"\n\n<i>⚠️ If You are Unknown with this **ERROR**, Then Forward This Message in [Colab Leecher Discussion](https://t.me/Colab_Leecher_Discuss) Where [Xron Trix](https://t.me/XronTrix) may fix it</i>"
+                Err += f"\n\n<i>⚠️ If You are Unknown with this **ERROR**, Then Forward This Message in [sky leech chat](https://t.me/skyleechchat) Where [Minitor](https://t.me/Minitor) may fix it</i>"
                 await MSG.status_msg.reply_text(text=Err)
 
     BOT.State.started = False
